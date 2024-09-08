@@ -1,22 +1,15 @@
 import { defineConfig } from "vite";
-// For Vue
-// import vue from "@vitejs/plugin-vue";
+import react from "@vitejs/plugin-react";
 
-// For React
-// import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
 export default defineConfig({
   root: "./src/",
   // Load plugins here, eg.
-  // plugins: [vue(), react()],
-  plugins: [],
+  plugins: [react()],
   build: {
-    // If you change this output dir, you must change your assets_path in kino_smartcell_template.ex
     outDir: "../lib/build",
     rollupOptions: {
       preserveEntrySignatures: "exports-only",
-      input: "./src/main.js",
+      input: "./src/main.jsx",
       output: {
         dir: "./build",
         entryFileNames: "main.js",

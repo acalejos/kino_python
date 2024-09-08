@@ -1,0 +1,19 @@
+# Kino Python
+
+```elixir
+Mix.install(
+  [
+    {:kino_python, path: "/Users/andres/Documents/kino_python"}
+  ]
+)
+```
+
+## Section
+
+<!-- livebook:{"attrs":"eyJmaWVsZHMiOnsicmV0dXJuX3ZhbHVlcyI6ImEsIGIifSwic291cmNlIjoiaW1wb3J0IG1hdGhcblxuYiA9IG1hdGguc3FydCg0KSJ9","chunks":null,"kind":"Elixir.KinoPython.SmartCell","livebook_object":"smart_cell"} -->
+
+```elixir
+import Pythonx
+pyeval("import math\n\nb = math.sqrt(4)", return: [:a, :b])
+Keyword.take(binding(), [:a, :b])
+```

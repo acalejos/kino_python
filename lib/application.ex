@@ -1,4 +1,4 @@
-defmodule KinoSmartcellTemplate.Application do
+defmodule KinoPython.Application do
   @moduledoc false
 
   use Application
@@ -6,10 +6,10 @@ defmodule KinoSmartcellTemplate.Application do
   @impl true
   def start(_type, _args) do
     # Register all smart cells you want to expose (we only have 1 but multiple can be defined and exposed)
-    Kino.SmartCell.register(KinoSmartcellTemplate)
+    Kino.SmartCell.register(KinoPython.SmartCell)
 
     children = []
-    opts = [strategy: :one_for_one, name: KinoSmartcellTemplate.Supervisor]
+    opts = [strategy: :one_for_one, name: KinoPython.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

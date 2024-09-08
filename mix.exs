@@ -1,9 +1,9 @@
-defmodule KinoSmartcellTemplate.MixProject do
+defmodule KinoPython.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :kino_smartcell_template,
+      app: :kino_python,
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule KinoSmartcellTemplate.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {KinoSmartcellTemplate.Application, []}
+      mod: {KinoPython.Application, []}
     ]
   end
 
@@ -23,7 +23,8 @@ defmodule KinoSmartcellTemplate.MixProject do
   defp deps do
     [
       # Defaults to latest version of Kino, but you should pin a version here instead for reproducability
-      {:kino, ">= 0.0.0"}
+      {:kino, "~> 0.14"},
+      {:pythonx, "~> 0.1.0"}
     ]
   end
 end

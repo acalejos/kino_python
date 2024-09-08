@@ -1,4 +1,4 @@
-# KinoSmartcellTemplate
+# KinoPython
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/ac_alejos?style=social)](https://twitter.com/ac_alejos)
 
@@ -34,7 +34,7 @@ For an example of a project built using this template, you can refer to [Merquer
 
 1. Create a new repo from this template as shown [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
 1. Clone a local copy
-1. Change all references to `kino_smartcell_template` and `KinoSmartCellTemplate` to your application's name
+1. Change all references to `kino_smartcell_template` and `KinoPython` to your application's name
 1. From within the `lib/assets` directory run `npm i` to install dependencies.
     1. Optionally add any plugins or other dependencies you need
 1. From within `lib/assets` run `npm run dev` to start a watchful Vite build. Now when you make changes they will
